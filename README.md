@@ -11,6 +11,7 @@ The original implementation of this component can be found on the first page of 
 
 ## Learning sources
 https://codepen.io/shshaw/pen/qqPwXM - This is where I took inspiration from. I used this code as a base and built on top of it.
+
 https://pixijs.com/8.x/examples
 
 ## How it works
