@@ -1,6 +1,7 @@
 # water-drop
 
 ## Pages
+https://isaactsampson.github.io/water-drop/
 
 ## Notes
 The original implementation of this component can be found on the first page of my portfolio website (the big floating logo https://isaac-portfolio.dev/). The original differs from this example in 3 ways: 

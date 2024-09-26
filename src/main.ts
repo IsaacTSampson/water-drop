@@ -1,6 +1,6 @@
 import "./style.css";
 
-import { Application, MeshPlane, Renderer, Texture } from "pixi.js";
+import {Application, Assets, MeshPlane, Renderer, Texture} from "pixi.js";
 import { calculateMouseVelocity } from "./utils.ts";
 
 export const elementNotFoundError = (elementId: string) =>
@@ -60,12 +60,11 @@ const videoId = "video";
     return mesh;
   };
 
-  const getTexture = () => Texture.from(video, true);
 
   const updateTexture = () => texture.update();
 
   let app: Application<Renderer> = new Application<Renderer>();
-  let texture: Texture = getTexture();
+  let texture: Texture = await Assets.load('src/media/weird.mp4');
   let mesh: MeshPlane = new MeshPlane({
     texture,
     verticesX: 200,
