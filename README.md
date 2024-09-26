@@ -9,6 +9,8 @@ The original implementation of this component can be found on the first page of 
 1. The texture is created from an .mp4 asset rather than a canvas element.
 2. A fixed pixel height has been applied to the (in this case) video element eliminating the need for image scaling making the code slightly easier to read. 
 
+IMPORTANT - I encourage viewing this on desktop as it has not yet be optimised for mobile devices.
+
 ## Learning sources
 https://codepen.io/shshaw/pen/qqPwXM - This is where I took inspiration from. I used this code as a base and built on top of it.
 
