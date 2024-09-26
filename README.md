@@ -6,7 +6,7 @@ https://isaactsampson.github.io/water-drop/
 ## Notes
 The original implementation of this component can be found on the first page of my portfolio website (the big floating logo https://isaac-portfolio.dev/). The original differs from this example in 2 ways: 
 
-1. The texture is created from a video asset rather than a canvas element.
+1. The texture is created from an .mp4 asset rather than a canvas element.
 2. A fixed pixel height has been applied to the (in this case) video element eliminating the need for image scaling making the code slightly easier to read. 
 
 ## Learning sources
