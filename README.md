@@ -5,7 +5,7 @@
 ## Notes
 The original implementation of this component can be found on the first page of my portfolio website (the big floating logo https://isaac-portfolio.dev/). The original differs from this example in 3 ways: 
 
-1. IMPORTANT - This example is currently not compatible with Safari web browser so please view this on any other browser. I will try and add a fix for this in the not to distant future. 
+1. IMPORTANT - This example is currently not compatible with Safari web browser so please view this on any other browser. I will try and add a fix for this in the not too distant future. 
 2. The texture is created from a video element rather than a canvas element.
 3. A fixed pixel height has been applied to the (in this case) video element eliminating the need for image scaling making the code slightly easier to read. 
 
