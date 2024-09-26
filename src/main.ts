@@ -15,6 +15,8 @@ const rippleSize = 12;
 const wrapperId = "wrapper";
 const videoId = "video";
 
+const assetUri = import.meta.env.DEV ? 'media/weird.mp4' : `${import.meta.env.BASE_URL}media/weird.mp4`;
+
 (async () => {
   const wrapper = document.getElementById(wrapperId) as HTMLDivElement | null;
   if (!wrapper) throw elementNotFoundError(wrapperId);
@@ -60,11 +62,12 @@ const videoId = "video";
     return mesh;
   };
 
-
   const updateTexture = () => texture.update();
 
   let app: Application<Renderer> = new Application<Renderer>();
-  let texture: Texture = await Assets.load('src/media/weird.mp4');
+  console.error('before texture', assetUri)
+  let texture: Texture = await Assets.load(assetUri);
+  console.error('after texture')
   let mesh: MeshPlane = new MeshPlane({
     texture,
     verticesX: 200,
