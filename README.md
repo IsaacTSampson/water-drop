@@ -15,6 +15,6 @@ https://codepen.io/shshaw/pen/qqPwXM - This is where I took inspiration from. I 
 https://pixijs.com/8.x/examples
 
 ## How it works
-This code creates a ripple effect on a video element using pixi.js (a 2D WebGL renderer library) to manipulate the mesh geometry of the video texture. When the user interacts with the video via mouse clicks or movements, the code calculates the ripple's origin point based on the mouse coordinates, scaled to the video's dimensions. It then updates the mesh geometry’s vertices to simulate ripples originating from the point of interaction.
+This code creates a ripple effect from an .mp4 asset using pixi.js (a 2D WebGL renderer library) by manipulating the mesh geometry of the .mp4 asset texture. When the user interacts with the video via mouse clicks or movements, the code calculates the ripple's origin point based on the mouse coordinates, scaled to the video's dimensions. It then updates the mesh geometry’s vertices to simulate ripples originating from the point of interaction.
 
 The ripple effect works by adjusting the positions of the vertices in the MeshPlane, which represents the video. The ripple originates from the interaction point and spreads outwards, with its intensity governed by a waveStrength variable that gradually decays over time. The code uses the Math function 'sin' to create the ripple motion, with the displacement of each vertex determined by its distance from the origin and the current wave phase (count). Mouse velocity also influences the ripple strength when the mouse enters the video area.
