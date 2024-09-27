@@ -1,6 +1,6 @@
 import "./style.css";
 
-import {Application, Assets, MeshPlane, Renderer, Texture} from "pixi.js";
+import { Application, Assets, MeshPlane, Renderer, Texture } from "pixi.js";
 import { calculateMouseVelocity } from "./utils.ts";
 
 export const elementNotFoundError = (elementId: string) =>
@@ -15,7 +15,9 @@ const rippleSize = 12;
 const wrapperId = "wrapper";
 const videoId = "video";
 
-const assetUri = import.meta.env.DEV ? 'media/weird.mp4' : `${import.meta.env.BASE_URL}media/weird.mp4`;
+const assetUri = import.meta.env.DEV
+  ? "media/weird.mp4"
+  : `${import.meta.env.BASE_URL}media/weird.mp4`;
 
 (async () => {
   const wrapper = document.getElementById(wrapperId) as HTMLDivElement | null;
@@ -65,9 +67,11 @@ const assetUri = import.meta.env.DEV ? 'media/weird.mp4' : `${import.meta.env.BA
   const updateTexture = () => texture.update();
 
   let app: Application<Renderer> = new Application<Renderer>();
-  console.error('before texture', assetUri)
   let texture: Texture = await Assets.load(assetUri);
-  console.error('after texture')
+
+  const videoElement = texture.source.resource as HTMLVideoElement;
+  videoElement.loop = true;
+
   let mesh: MeshPlane = new MeshPlane({
     texture,
     verticesX: 200,
